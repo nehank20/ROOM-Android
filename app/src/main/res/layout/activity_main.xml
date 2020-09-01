@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        
+        <LinearLayout
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="8dp"
+                android:background="@color/red1"
+                app:cardBackgroundColor="@color/red1"
+                android:elevation="8dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+
+                    android:padding="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textColor="@color/colorBlack"
+                        android:text="Tables "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:text="1. Show User Table"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        />
+                    <Button
+                        android:textColor="@color/red1"
+                        android:background="@color/colorWhite"
+                        android:id="@+id/btnUserTable"
+                        android:text="User table"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:text="2. Show Workstation Table"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        />
+                    <Button
+                        android:textColor="@color/red1"
+                        android:id="@+id/btnWorkStationTable"
+                        android:background="@color/colorWhite"
+                        android:text="WorkStation table"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:text="3. Show Project Table"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        />
+                    <Button
+                        android:textColor="@color/red1"
+                        android:id="@+id/btnProjectTable"
+                        android:text="Project table"
+                        android:background="@color/colorWhite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:background="@color/red2"
+                app:cardBackgroundColor="@color/red2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="8dp"
+                android:elevation="8dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:padding="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textColor="@color/colorBlack"
+                        android:text="Simple Queries"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:text="1. Get details of a user"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        />
+                    <EditText
+                        android:id="@+id/etDetailsOfUser"
+                        android:hint="Please enter UserID"
+                        android:layout_marginTop="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+                        android:textColor="@color/red2"
+                        android:background="@color/colorWhite"
+                        android:id="@+id/btnDetailsOfUser"
+                        android:text="Details of a single user"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:text="2. Get details of WorkStation by WorkSt-ID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        />
+                    <EditText
+                        android:id="@+id/etDetailsOfWorkStationByWID"
+                        android:hint="Please enter WorkStationID"
+                        android:layout_marginTop="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+                        android:textColor="@color/red2"
+                        android:background="@color/colorWhite"
+                        android:id="@+id/btnDetailsOfWorkStationByWID"
+                        android:text="Details of workstation by WorkSt-ID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:text="3. Get details of WorkStation by Emp-ID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        />
+                    <EditText
+                        android:id="@+id/etDetailsOfWorkStationByEID"
+                        android:hint="Please enter EmployeeID"
+                        android:layout_marginTop="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+                        android:textColor="@color/red2"
+                        android:background="@color/colorWhite"
+                        android:id="@+id/btnDetailsOfWorkStationByEID"
+                        android:text="Details of workstation by Emp-ID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:text="4. Get details of Project by Project-ID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        />
+                    <EditText
+                        android:id="@+id/etDetailsOfProjectByID"
+                        android:hint="Please enter ProjectID"
+                        android:layout_marginTop="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+                        android:textColor="@color/red2"
+                        android:background="@color/colorWhite"
+                        android:id="@+id/btnDetailsOfProjectByID"
+                        android:text="Details of Project by Project-ID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red3"
+                app:cardBackgroundColor="@color/red3"
+                app:cardElevation="8dp"
+                android:elevation="8dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:padding="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textColor="@color/colorBlack"
+                        android:text="One to one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:text="1. One User can have only one workstation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        />
+                    <Button
+                        android:textColor="@color/red3"
+                        android:background="@color/colorWhite"
+                        android:id="@+id/btnOneToOne"
+                        android:text="Show Results of One-to-One"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:background="@color/red4"
+                app:cardBackgroundColor="@color/red4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="8dp"
+                android:elevation="8dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:padding="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textColor="@color/colorBlack"
+                        android:text="One to many"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:text="1. One User can have multiple projects(List of all users)"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        />
+                    <Button
+                        android:textColor="@color/red4"
+                        android:background="@color/colorWhite"
+                        android:id="@+id/btnOneToManyFirst"
+                        android:text="Show Results of One-to-many"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:text="2. One User can have multiple projects(Single users)"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        />
+
+                    <EditText
+                        android:id="@+id/etUserID"
+                        android:hint="Please enter UserID"
+                        android:layout_marginTop="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                    <Button
+                        android:textColor="@color/red4"
+                        android:background="@color/colorWhite"
+                        android:id="@+id/btnOneToManySecond"
+                        android:text="Show Results of One-to-many"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:background="@color/red5"
+                app:cardBackgroundColor="@color/red5"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="8dp"
+                android:elevation="8dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="8dp"
+                >
+
+                <LinearLayout
+                    android:padding="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textColor="@color/colorBlack"
+                        android:text="Many to many"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:text="1. Show Cross-Reference Table"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        />
+
+                    <Button
+                        android:textColor="@color/red5"
+                        android:background="@color/colorWhite"
+                        android:id="@+id/btnCrossRefTable"
+                        android:text="Cross-Reference Table"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:text="2. Many users can have multiple projects"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        />
+
+                    <Button
+                        android:textColor="@color/red5"
+                        android:background="@color/colorWhite"
+                        android:id="@+id/btnManyToManyFirst"
+                        android:text="Show result of Many-to-Many "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:text="3. Many projects can have multiple users"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        />
+
+                    <Button
+                        android:textColor="@color/red5"
+                        android:background="@color/colorWhite"
+                        android:id="@+id/btnManyToManySecond"
+                        android:text="Show result of Many-to-Many "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            
+            
+        </LinearLayout>
+
+
+        
+
+
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
